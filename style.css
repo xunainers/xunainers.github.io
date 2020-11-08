@@ -1,0 +1,264 @@
+h1 {
+  margin-top: 0px;
+  
+}
+
+.material-icons {
+  margin-top: 18px;
+  float: right;
+  font-size: 2.0em !important;
+}
+
+.mesa1{
+  margin-left: 4px;
+  float: left;
+}
+
+.mesa2{
+  float: center;
+  
+}
+
+.mesa3{
+  margin-right: 4px;
+  float: right;
+}
+
+.mesa1, .mesa2, .mesa3 {
+  display: inline-block;
+  heigth: auto !important;
+  margin-bottom: 0px !important;
+  margin-top: 2px;
+  --background: red;
+  font-family: helvetica;
+  font-size: 0.95em !important;  
+  font-weight: bold;
+  color: white;
+}
+
+.produto1 {
+  height: 64px;
+  --margin-left: 1px;
+  background: white;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+  border-bottom-style: groove !important;
+  text-overflow: ellipsis !important;  
+  overflow: hidden;
+}
+
+#cervejas {
+  color: black;
+  text-overflow: ellipsis !important;  
+  overflow: hidden;
+}
+
+.nome1 {
+  display: inline-block;
+  float: left;
+  width: 65%;
+  margin-left: 8px;
+  text-align : left;
+  font-family: helvetica;
+  font-weight: bold;
+  --background: red;
+}
+
+.nome2 {
+  display: inline-block;
+  margin-right: 8px;
+  height: 35%;
+  float: right;
+  font-family: helvetica;
+  font-size: 0.75em !important;
+  --color: grey;
+  border-right: 15px !important;
+  --background: red;
+}
+
+.nome3 {
+  float: left;
+  width: calc(80%);
+  --max-width: 300px;
+  height: 60px;
+  margin-left: 8px;
+  --background: blue;
+  display: inline-block;
+  font-family: helvetica;
+  font-style: italic;
+  text-align: left;
+  color: gray;
+  font-size: 0.85em !important;
+  overflow: hidden;
+  white-space:normal;
+  text-overflow: ellipsis !important;  
+}
+
+.nome3:after{
+  --border-bottom: 1px solid black;
+ 
+}
+
+#cerveja {
+  margin-top: 4px;
+  width: auto;
+  height: auto;
+  max-width: 80%;
+  max-height: 80%;  
+  display: block;
+  float: left;
+  border-radius: 80%;
+  border-color: black;
+  border-width: 1px;
+}
+
+#logo {
+  width: auto;
+  --height: auto;
+  --float: left;
+  max-width: 80%;
+  max-height: 240%;
+  display: block; /* remove extra space below image */
+  float: left;
+ }
+
+body {
+  margin-top: 1px !important; 
+  margin-bottom: 0px !important; 
+  margin-left: 0px; 
+  margin-right: 0px;
+  padding: 0;  
+  font-family: helvetica;
+  background: #142033;
+  --backround: #9babc2;
+  color: white;
+  text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.fixed2 {
+  padding: 0px;
+  height: 25px;
+  font-family: helvetica;  
+  text-align: center;
+  margin: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: white;
+  background: #27323d;
+  border-style: solid;
+  border-color: #27323d;
+  border-width: 1px;
+  border-radius: 0px;
+  border-bottom: 1px solid white;
+  border-bottom-style: groove !important;  
+}
+
+.opcao {
+    display:inline-block;
+    margin-right: 0px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+#cardapio, #pedido, #status {
+  font-size: 1.0em !important;
+  color: #4a6075;
+  display:inline-block;
+  height: 26px;
+  box-sizing: border-box;
+  --background: red;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#cardapio {
+  float: left;
+  margin-left: 14px;
+}
+
+#cardapio:focus{
+  color: white !important;
+  border-bottom-style: solid;  
+  border-color: white;
+  border-width: 3px;
+  outline: none;
+  
+}
+
+#pedido {
+  float: center;
+  transform: translateX(-12%);
+}
+
+#pedido:focus{
+  color: white !important;
+  border-bottom-style: solid;  
+  border-color: white;
+  border-width: 3px;
+  outline: none;
+}
+
+#status {
+  float: right;
+  margin-right: 14px;
+}
+
+#status:focus{
+  color: white !important;
+  border-bottom-style: solid;  
+  border-color: white;
+  border-width: 3px;
+  outline: none;  
+}
+
+.fixed3 {
+  padding: 0px;
+  height: 30px;
+  line-height: 24px;
+  font-family: helvetica;
+  text-align: center;
+  margin: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: black;
+  background: #27323d;
+  border-style: solid;
+  border-color: #27323d;
+  border-width: 1px;
+  border-radius: 0px;
+}
+
+
+.fixed {
+  height: 74px;
+  text-align: center;
+  margin: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background: black;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+header {
+  margin : 0px !important;
+}
