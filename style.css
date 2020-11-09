@@ -357,6 +357,7 @@ header {
   .addremove {
 
     border-radius: 2px;
+    border: 0px;
     width: 85%;
     height: auto;
     max-width: 85%;
