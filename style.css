@@ -26,7 +26,7 @@ h1 {
 
 .mesa1, .mesa2, .mesa3 {
   display: inline-block;
-  heigth: auto !important;
+  height: auto !important;
   margin-bottom: 0px !important;
   margin-top: 2px;
   --background: red;
@@ -37,12 +37,12 @@ h1 {
 }
 
 .produto1 {
-  height: 64px;
+  height: 68px;
   --margin-left: 1px;
   background: white;
   overflow: hidden;
-  border-bottom: 1px solid black;
-  border-bottom-style: groove !important;
+  --border-bottom: 1px solid black;
+  --border-bottom-style: groove !important;
   text-overflow: ellipsis !important;  
   overflow: hidden;
 }
@@ -66,14 +66,25 @@ h1 {
 
 .nome2 {
   display: inline-block;
+  margin-top: 2px;
   margin-right: 8px;
   height: 35%;
   float: right;
   font-family: helvetica;
-  font-size: 0.75em !important;
+  font-size: 0.85em !important;
   --color: grey;
   border-right: 15px !important;
   --background: red;
+}
+
+.nome4{
+  height: 97%;
+  --background : red;
+  margin-left: 12%;
+  border-bottom: 2px solid black;
+  border-bottom-style: groove !important;
+    
+    border-bottom-style: solid;  
 }
 
 .nome3 {
