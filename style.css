@@ -268,6 +268,7 @@ header {
 .modal {
   color: blueviolet;
   display: none;
+  align-items: top;
   box-shadow: 14px 14px  rgba(0, 0, 0, 0.4);
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -279,6 +280,41 @@ header {
   border-radius: 20px;
   overflow: auto; /* Enable scroll if needed */
   transform: translate(-50%, -50%);
+  margin-top: 0px;
+  vertical-align:top;  
+  overflow: hidden;
   background-color: rgb(255, 255, 255); /* Fallback color */
-  background-color: rgba(255, 255, 255, 1); /* Black w/ opacity */
+  background-color: rgb(88, 15, 15); /* Black w/ opacity */
+}
+
+#botaocancel {
+  color: red;
+}
+
+.modalHeader, .modalImg, .modalDesc, .modalButtons {
+  position: relative;
+  top: 0vw !important;
+  left: 0vw;
+  display: inline-block;
+  width: 99%;
+  height: 30px;
+  background-color: crimson;
+  border-style: solid;
+}
+
+.modalHeader {
+  height: calc(10%) !important;
+  float: left;
+}
+
+.modalImg {
+  height: calc(40%) !important;
+}
+
+.modalDesc {
+  height: calc(20%) !important;
+}
+
+.modalButtons {
+  height: calc(20%) !important;
 }

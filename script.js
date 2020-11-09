@@ -19,13 +19,14 @@ document.getElementById("info").innerHTML += '<b>Data: '+ hoje +'</b>';
 $('.produto1').on('click', function(e) {
   
     var estilo = document.getElementById("meumodal1");
-    estilo.style.display = 'block';
-    modalShow = true
+    estilo.style.display = 'inline-block';
+    modalShow = true;
   //alert( 'Vai pedir IPA!' );
 });
 
 
-$('.closemodal').on('click', function(e) {
+$('#botaocancel').on('click', function(e) {
+  
   
   var estilo = document.getElementById("meumodal1");
   estilo.style.display = 'none';
@@ -42,13 +43,16 @@ $('.produto2').on('click', function(e) {
 });
 
 $('.produto3').on('click', function(e) {
-  alert( 'Vai pedir Dry Stout!' );
+  if (!modalShow)
+    alert( 'Vai pedir Dry Stout!' );
 });
 
 $('.produto4').on('click', function(e) {
-  alert( 'Vai pedir Lagger!' );
+  if (!modalShow)
+    alert( 'Vai pedir Lagger!' );
 });
 
 $('.produto5').on('click', function(e) {
-  alert( 'Vai pedir Gin Tonika!' );
+  if (!modalShow)
+    alert( 'Vai pedir Gin Tonika!' );
 });
