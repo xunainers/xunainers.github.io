@@ -36,7 +36,7 @@ h1 {
   color: white;
 }
 
-.produto1 {
+.produto1, .produto2, .produto3, .produto4, .produto5 {
   height: 68px;
   --margin-left: 1px;
   background: white;
