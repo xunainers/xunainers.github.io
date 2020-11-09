@@ -266,8 +266,9 @@ header {
 }
 
 .modal {
-  color: blueviolet;
-  display: none;
+  color: rgb(0, 0, 0);
+  visibility: hidden;
+  display: inline-block;
   box-shadow: 14px 14px  rgba(0, 0, 0, 0.4);
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -280,7 +281,8 @@ header {
   transform: translate(-50%, -50%);
   overflow: hidden;
   background-color: rgb(255, 255, 255); /* Fallback color */
-  background-color: rgb(88, 15, 15); /* Black w/ opacity */
+  background-color: rgb(255, 255, 255); /* Black w/ opacity */
+  transition:visibility 0.3s linear,opacity 0.3s linear;
 }
 
 #botaocancel {
@@ -291,17 +293,38 @@ header {
   
   display: inline-block;
   width: 99%;
-  background-color: crimson;
-  border-style: solid;
+  overflow: hidden;
 }
 
 .modalHeader {
-  height: calc(10%) !important;
-  vertical-align: top;
+  height: calc(5%) !important;
+  vertical-align: center;
+  font-family: helvetica;
+  font-size: 1.25em !important;  
+  font-weight: bold;
+  text-align: left;
+  padding-top: 8px;
+  padding-left: 10px;
 }
 
 .modalImg {
   height: calc(40%) !important;
+   
+  text-align: center;
+  --max-width: 85% !important;
+  --max-height: auto !important;
+  margin: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-width: 1px;
+  border-radius: 0px;
+  overflow: hidden;
+
+  background-color: rgba(88, 15, 15, 0.1); /* Black w/ opacity */
+
+
 }
 
 .modalDesc {
@@ -310,4 +333,14 @@ header {
 
 .modalButtons {
   height: calc(25%) !important;
+}
+
+.mImg{
+  width: auto;
+  height: auto;
+  max-width: 110%;
+  max-height: 360%; 
+
+  display: block; /* remove extra space below image */
+  float: left;
 }

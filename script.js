@@ -17,9 +17,14 @@ document.getElementById("info").innerHTML += '<b>Data: '+ hoje +'</b>';
 
 
 $('.produto1').on('click', function(e) {
-  
+    var vProd = document.getElementById("1nomecervejas1").innerHTML;
+
+    document.getElementById("mHeader").innerHTML = vProd;
+    document.getElementById("mImg").innerHTML = '<img src="https://i.ibb.co/RPGMSzr/IPA-Wide-Cut.png" class="mImg" border=0>';
+
     var estilo = document.getElementById("meumodal1");
-    estilo.style.display = 'inline-block';
+    estilo.style.visibility = 'visible';
+    estilo.style.opacity = 1;
     modalShow = true;
   //alert( 'Vai pedir IPA!' );
 });
@@ -29,7 +34,8 @@ $('#botaocancel').on('click', function(e) {
   
   
   var estilo = document.getElementById("meumodal1");
-  estilo.style.display = 'none';
+  estilo.style.visibility = 'hidden';
+  estilo.style.opacity = 0;
   modalShow = false;
 //alert( 'Vai pedir IPA!' );
 });
