@@ -298,10 +298,10 @@ header {
 }
 
 .modalHeader {
-  height: 28px !important;
+  height: 5vh !important;
   vertical-align: center;
   font-family: helvetica;
-  font-size: 1.25em !important;  
+  font-size: 3vh !important;  
   font-weight: bold;
   text-align: center;
   padding-top: 8px;
@@ -335,7 +335,7 @@ header {
   padding-right: 10px !important;
   margin-right: 10px !important;
   font-family: helvetica;
-  font-size: 0.75em !important;
+  font-size: 2vh !important;
   font-style: italic;
   --font-weight: bold;
   text-align: justify !important;
