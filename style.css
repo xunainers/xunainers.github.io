@@ -276,7 +276,7 @@ header {
   top: 50%;
   padding-top: 4px;
   width: 80%; /* Full width */
-  height: 90%; /* Full height */
+  height: 90vh; /* Full height */
   border-radius: 20px;
   transform: translate(-50%, -50%);
   overflow: hidden;
@@ -346,8 +346,31 @@ header {
 }
 
 .modalButtons {
-  height: calc(25%) !important;
+  height: auto !important;
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 10px;  
+  text-align: bottom;
+  
 }
+
+  .addremove {
+
+    border-radius: 2px;
+    width: 85%;
+    height: auto;
+    max-width: 85%;
+    box-shadow: 2px 2px 5px 0 #000;
+    font-family: Helvetica;
+    font-size: 3.0vh;
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #2f7739;
+  }
+
 
 .mImg{
   width: auto !important;
