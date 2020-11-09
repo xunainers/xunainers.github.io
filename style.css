@@ -275,7 +275,7 @@ header {
   left: 50%;
   top: 50%;
   width: 80%; /* Full width */
-  height: 80%; /* Full height */
+  height: 70%; /* Full height */
   border-radius: 20px;
   overflow: auto; /* Enable scroll if needed */
   transform: translate(-50%, -50%);
