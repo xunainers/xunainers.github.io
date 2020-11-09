@@ -60,7 +60,7 @@ h1 {
   text-align : left;
   font-family: helvetica;
   font-weight: bold;
-  --background: red;
+  pointer-events: none;
 }
 
 .nome2 {
@@ -71,6 +71,7 @@ h1 {
   font-family: helvetica;
   font-size: 0.85em !important;
   border-right: 15px !important;
+  pointer-events: none;
 }
 
 .nome4{
@@ -78,7 +79,8 @@ h1 {
   margin-left: 12%;
   border-bottom: 2px solid black;
   border-bottom-style: groove !important;
-  border-bottom-style: solid;  
+  border-bottom-style: solid;
+  pointer-events: none;
 }
 
 .nome3 {
@@ -95,7 +97,8 @@ h1 {
   font-size: 0.85em !important;
   overflow: hidden;
   white-space:normal;
-  text-overflow: ellipsis !important;  
+  text-overflow: ellipsis !important;
+  pointer-events: none;
 }
 
 #cerveja {
