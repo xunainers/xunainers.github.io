@@ -72,19 +72,15 @@ h1 {
   float: right;
   font-family: helvetica;
   font-size: 0.85em !important;
-  --color: grey;
   border-right: 15px !important;
-  --background: red;
 }
 
 .nome4{
   height: 97%;
-  --background : red;
   margin-left: 12%;
   border-bottom: 2px solid black;
   border-bottom-style: groove !important;
-    
-    border-bottom-style: solid;  
+  border-bottom-style: solid;  
 }
 
 .nome3 {
@@ -103,11 +99,6 @@ h1 {
   overflow: hidden;
   white-space:normal;
   text-overflow: ellipsis !important;  
-}
-
-.nome3:after{
-  --border-bottom: 1px solid black;
- 
 }
 
 #cerveja {
