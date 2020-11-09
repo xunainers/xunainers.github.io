@@ -3,7 +3,8 @@ var Abas = document.querySelectorAll(".opcao");
 Abas[0].focus();
 var vData = new Date();
 var hoje = vData.getDate();
-
+var modalShow = false;
+var modalShowing = "";
 
 document.getElementById("treta").innerHTML = '#####';
 
@@ -16,11 +17,28 @@ document.getElementById("info").innerHTML += '<b>Data: '+ hoje +'</b>';
 
 
 $('.produto1').on('click', function(e) {
-   alert( 'Vai pedir IPA!' );
+  
+    var estilo = document.getElementById("meumodal1");
+    estilo.style.display = 'block';
+    modalShow = true
+  //alert( 'Vai pedir IPA!' );
 });
 
+
+$('.closemodal').on('click', function(e) {
+  
+  var estilo = document.getElementById("meumodal1");
+  estilo.style.display = 'none';
+  modalShow = false;
+//alert( 'Vai pedir IPA!' );
+});
+
+
+
+
 $('.produto2').on('click', function(e) {
-  alert( 'Vai pedir Pilsen!' );
+  if (!modalShow)
+    alert( 'Vai pedir Pilsen!' );
 });
 
 $('.produto3').on('click', function(e) {
