@@ -164,7 +164,7 @@ body {
   border-bottom-style: groove !important;  
 }
 
-.opcao {
+.opcao1, .opcao2, .opcao3 {
     display:inline-block;
     margin-right: 0px;
     box-sizing: border-box;
@@ -177,6 +177,10 @@ body {
   display:inline-block;
   height: 26px;
   box-sizing: border-box;
+  outline: none;
+  border-color: white;
+  border-width: 3px;
+  outline: none;
   --background: red;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -189,15 +193,10 @@ body {
 #cardapio {
   float: left;
   margin-left: 14px;
-}
-
-#cardapio:focus{
-  color: white !important;
+  color: white;
   border-bottom-style: solid;  
   border-color: white;
-  border-width: 3px;
-  outline: none;
-  
+  border-width: 3px;  
 }
 
 #pedido {
@@ -205,25 +204,9 @@ body {
   transform: translateX(-12%);
 }
 
-#pedido:focus{
-  color: white !important;
-  border-bottom-style: solid;  
-  border-color: white;
-  border-width: 3px;
-  outline: none;
-}
-
 #status {
   float: right;
   margin-right: 14px;
-}
-
-#status:focus{
-  color: white !important;
-  border-bottom-style: solid;  
-  border-color: white;
-  border-width: 3px;
-  outline: none;  
 }
 
 .fixed3 {

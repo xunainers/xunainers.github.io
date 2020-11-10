@@ -1,6 +1,6 @@
 
 
-var Abas = document.querySelectorAll(".opcao");
+var Abas = document.querySelectorAll(".opcao1");
 Abas[0].focus();
 var vData = new Date();
 var hoje = vData.getDate();
@@ -17,20 +17,6 @@ else
 document.getElementById("info").innerHTML += '<b>Data: '+ hoje +'</b>';
 
 
-$('.produto1').on('click', function(e) {
-    var vProd = document.getElementById("1nomecervejas1").innerHTML;
-
-    document.getElementById("mHeader").innerHTML = vProd;
-    document.getElementById("mImg").innerHTML = '<img src="https://i.ibb.co/RPGMSzr/IPA-Wide-Cut.png" class="mImg" border=0>';
-
-    var estilo = document.getElementById("meumodal1");
-    estilo.style.visibility = 'visible';
-    estilo.style.opacity = 1;
-    modalShow = true;
-  //alert( 'Vai pedir IPA!' );
-});
-
-
 $('#botaocancel').on('click', function(e) {
   
   
@@ -41,28 +27,131 @@ $('#botaocancel').on('click', function(e) {
 //alert( 'Vai pedir IPA!' );
 });
 
+// Controle de FOCO : Cardapio - Pedidos - Conta
+// Click Cardapio
+$('.opcao1').on('click', function(e) { 
+  var estiloCardapio = document.getElementById("cardapio");
+  var estiloPedido = document.getElementById("pedido");
+  var estiloConta = document.getElementById("status");
 
+  // Estilos de foco para cardapio
+  estiloCardapio.style.color = "white";
+  estiloCardapio.style.borderBottomStyle = "solid"
+
+  //Estilos padrao para restante
+
+  estiloPedido.style.color = "#4a6075";
+  estiloPedido.style.borderBottomStyle = "none";
+
+  estiloConta.style.color = "#4a6075";
+  estiloConta.style.borderBottomStyle = "none";
+});
+
+
+// Click Pedidos
+$('.opcao2').on('click', function(e) {
+  var estiloCardapio = document.getElementById("cardapio");
+  var estiloPedido = document.getElementById("pedido");
+  var estiloConta = document.getElementById("status");
+
+  // Estilos de foco para Pedidos
+  estiloPedido.style.color = "white";
+  estiloPedido.style.borderBottomStyle = "solid"
+
+  //Estilos padrao para restante
+
+  estiloCardapio.style.color = "#4a6075";
+  estiloCardapio.style.borderBottomStyle = "none";
+
+  estiloConta.style.color = "#4a6075";
+  estiloConta.style.borderBottomStyle = "none";
+});
+
+// Click Conta
+$('.opcao3').on('click', function(e) {
+  var estiloCardapio = document.getElementById("cardapio");
+  var estiloPedido = document.getElementById("pedido");
+  var estiloConta = document.getElementById("status");
+
+  // Estilos de foco para Conta
+  estiloConta.style.color = "white";
+  estiloConta.style.borderBottomStyle = "solid"
+
+  //Estilos padrao para restante
+
+  estiloCardapio.style.color = "#4a6075";
+  estiloCardapio.style.borderBottomStyle = "none";
+
+  estiloPedido.style.color = "#4a6075";
+  estiloPedido.style.borderBottomStyle = "none";
+});
+
+
+/************************************************************************
+ * Clique DIV de produtos
+ ***********************************************************************/
+
+$('.produto1').on('click', function(e) {
+  var vProd = document.getElementById("1nomecervejas1").innerHTML;
+
+  document.getElementById("mHeader").innerHTML = vProd;
+  document.getElementById("mImg").innerHTML = '<img src="https://i.ibb.co/RPGMSzr/IPA-Wide-Cut.png" class="mImg" border=0>';
+
+  var estilo = document.getElementById("meumodal1");
+  estilo.style.visibility = 'visible';
+  estilo.style.opacity = 1;
+  modalShow = true;
+
+});
 
 
 $('.produto2').on('click', function(e) {
-  if (!modalShow)
-   return; 
+  var vProd = document.getElementById("2nomecervejas1").innerHTML;
+
+  document.getElementById("mHeader").innerHTML = vProd;
+  document.getElementById("mImg").innerHTML = '<img src="https://i.ibb.co/f2N5p70/Pilsen-Wide-Cut.png" class="mImg" border=0>';
+
+  var estilo = document.getElementById("meumodal1");
+  estilo.style.visibility = 'visible';
+  estilo.style.opacity = 1;
+  modalShow = true;
 
 });
 
 $('.produto3').on('click', function(e) {
-  if (!modalShow)
-    alert( 'Vai pedir Dry Stout!' );
+  var vProd = document.getElementById("3nomecervejas1").innerHTML;
+
+  document.getElementById("mHeader").innerHTML = vProd;
+  document.getElementById("mImg").innerHTML = '<img src="https://i.ibb.co/jDpfrC3/Stout-Wide-Cut.png" class="mImg" border=0>';
+
+  var estilo = document.getElementById("meumodal1");
+  estilo.style.visibility = 'visible';
+  estilo.style.opacity = 1;
+  modalShow = true;
 });
 
 $('.produto4').on('click', function(e) {
-  if (!modalShow)
-    alert( 'Vai pedir Lagger!' );
+  var vProd = document.getElementById("4nomecervejas1").innerHTML;
+
+  document.getElementById("mHeader").innerHTML = vProd;
+  document.getElementById("mImg").innerHTML = '<img src="https://i.ibb.co/f2N5p70/Pilsen-Wide-Cut.png" class="mImg" border=0>';
+
+  var estilo = document.getElementById("meumodal1");
+  estilo.style.visibility = 'visible';
+  estilo.style.opacity = 1;
+  modalShow = true;
 });
 
 $('.produto5').on('click', function(e) {
-  if (!modalShow)
-    alert( 'Vai pedir Gin Tonika!' );
+  var vProd = document.getElementById("5nomecervejas1").innerHTML;
+
+  document.getElementById("mHeader").innerHTML = vProd;
+  document.getElementById("mImg").innerHTML = '<img src="https://i.ibb.co/6Xh6ft1/GIN-Wide-Cut.png" class="mImg" border=0>';
+
+  var estilo = document.getElementById("meumodal1");
+  estilo.style.visibility = 'visible';
+  estilo.style.opacity = 1;
+  modalShow = true;
 });
 
 
