@@ -333,6 +333,9 @@ header {
 }
 
 .modalDesc {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  overflow-y: scroll;
   height: 25vh !important;
   width: calc(97%) !important;
   margin-left: 4px;
@@ -347,6 +350,10 @@ header {
   border-bottom: black;
   border-bottom-width: 1px;
   border-bottom-style: groove;
+}
+
+.modalDesc::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 
 .modalButtons {
