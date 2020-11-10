@@ -45,6 +45,7 @@ h1 {
   --border-bottom-style: groove !important;
   text-overflow: ellipsis !important;  
   overflow: hidden;
+  transition: background 400ms;
 }
 
 #cervejas {
@@ -60,7 +61,7 @@ h1 {
   text-align : left;
   font-family: helvetica;
   font-weight: bold;
-  pointer-events: none;
+  --pointer-events: none;
 }
 
 .nome2 {
@@ -71,16 +72,16 @@ h1 {
   font-family: helvetica;
   font-size: 0.85em !important;
   border-right: 15px !important;
-  pointer-events: none;
+  --pointer-events: none;
 }
 
 .nome4{
   height: 97%;
   margin-left: 12%;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   border-bottom-style: groove !important;
   border-bottom-style: solid;
-  pointer-events: none;
+  --pointer-events: none;
 }
 
 .nome3 {
@@ -94,11 +95,11 @@ h1 {
   font-style: italic;
   text-align: left;
   color: gray;
-  font-size: 0.85em !important;
+  font-size: 0.75em !important;
   overflow: hidden;
   white-space:normal;
   text-overflow: ellipsis !important;
-  pointer-events: none;
+  --pointer-events: none;
 }
 
 #cerveja {
@@ -277,6 +278,9 @@ header {
   padding-top: 4px;
   width: 80%; /* Full width */
   height: 90vh; /* Full height */
+  border: 1px;
+  border-style: solid;
+  border-color: black;
   border-radius: 20px;
   transform: translate(-50%, -50%);
   overflow: hidden;
@@ -301,7 +305,7 @@ header {
   height: 5vh !important;
   vertical-align: center;
   font-family: helvetica;
-  font-size: 3vh !important;  
+  font-size: 2.9vh !important;  
   font-weight: bold;
   text-align: center;
   padding-top: 8px;
@@ -335,7 +339,7 @@ header {
   padding-right: 10px !important;
   margin-right: 10px !important;
   font-family: helvetica;
-  font-size: 2.2vh !important;
+  font-size: 2.1vh !important;
   font-style: italic;
   color: #27323d !important;
   --font-weight: bold;
@@ -382,4 +386,19 @@ header {
 
   display: block; /* remove extra space below image */
   float: left;
+}
+
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }
