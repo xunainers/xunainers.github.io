@@ -354,6 +354,7 @@ header {
     border: 0px;
     width: 85%;
     height: auto;
+    outline: none;
     max-width: 85%;
     box-shadow: 2px 2px 5px 0 #000;
     font-family: Helvetica;
