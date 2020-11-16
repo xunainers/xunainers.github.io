@@ -10,9 +10,9 @@ var modalShowing = "";
 document.getElementById("treta").innerHTML = '#####';
 
 if (hoje < 10)
-  hoje = '0' + vData.getDate() + '/' + vData.getFullYear();
+  hoje = '0' + vData.getDate() + '/' + (vData.getMonth() +1);
 else
-  hoje = vData.getDate() + '/' + vData.getFullYear();
+  hoje = vData.getDate() + '/' + (vData.getMonth() +1);
 
 document.getElementById("info").innerHTML += '<b>Data: '+ hoje +'</b>';
 
