@@ -12,7 +12,7 @@ document.getElementById("treta").innerHTML = '#####';
 if (hoje < 10)
   hoje = '0' + vData.getDate() + '/' + vData.getFullYear();
 else
-  hoje = vData.getDate() + '/' + vData.getYear();  
+  hoje = vData.getDate() + '/' + vData.getFullYear();
 
 document.getElementById("info").innerHTML += '<b>Data: '+ hoje +'</b>';
 
@@ -24,7 +24,7 @@ $('#botaocancel').on('click', function(e) {
   estilo.style.visibility = 'hidden';
   estilo.style.opacity = 0;
   modalShow = false;
-//alert( 'Vai pedir IPA!' );
+
 });
 
 // Controle de FOCO : Cardapio - Pedidos - Conta
